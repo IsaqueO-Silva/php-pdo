@@ -17,6 +17,9 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         echo 'Conexão realizada com sucesso!';
+
+        /* FECHANDO A CONEXÃO */
+        $conn = null;
     }
     catch(PDOException $e) {
         echo 'Erro, '.$e->getMessage();

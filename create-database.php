@@ -23,6 +23,9 @@
         $conn->exec($query);
 
         echo 'Banco de dados criado com sucesso!';
+
+        /* FECHANDO A CONEXÃO */
+        $conn = null;
     }
     catch(PDOException $e) {
         echo 'Erro, '.$e->getMessage();

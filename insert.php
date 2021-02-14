@@ -27,6 +27,9 @@
         $conn->exec($query);
 
         echo 'Dados inseridos com sucesso!';
+
+        /* FECHANDO A CONEXÃO */
+        $conn = null;
     }
     catch(PDOException $e) {
         echo 'Erro, '.$e->getMessage();

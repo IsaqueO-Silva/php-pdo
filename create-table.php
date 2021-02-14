@@ -31,6 +31,9 @@
         $conn->exec($query);
 
         echo 'Tabela criada com sucesso!';
+
+        /* FECHANDO A CONEXÃO */
+        $conn = null;
     }
     catch(PDOException $e) {
         echo 'Erro, '.$e->getMessage();
