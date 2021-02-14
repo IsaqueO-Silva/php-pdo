@@ -1,4 +1,4 @@
-<?php 
+<?php
     /* RESUMIDAMENTE UM PREPARED STATEMENT SE TRATA DE UMA
      INSTRUÇÃO SQL QUE PODE SER UTILIZADA QUANTAS VEZES FOR PRECISO
      OU SEJA ELA É DINÂMICA(SEM VALORES PRÉ-DEFINIDOS) */
@@ -21,16 +21,14 @@
         /* AQUI É IMPORTANTE NOTAR ALGUNS CONCEITOS
 
            1° - A QUERY NÃO TEM OS SEUS VALORES DEFINIDOS ESTÁTICAMENTE MAS SIM
-           PELO USO DE PLACEHOLDERS (:nome, :sobrenome, :cpf, :rg) 
-           
-           2° - A FUNÇÃO PREPARE SERVE PARA OTIMIZAR A QUERY QUE SERÁ EXECUTADA, 
-           PARA QUE ASSIM AS PRÓXIMAS EXECUÇÕES OCORRAM DE MANEIRA MAIS EFICIENTE
-           
-        */
+           PELO USO DE PLACEHOLDERS (:nome, :sobrenome, :cpf, :rg)
+
+           2° - A FUNÇÃO PREPARE SERVE PARA OTIMIZAR A QUERY QUE SERÁ EXECUTADA,
+           PARA QUE ASSIM AS PRÓXIMAS EXECUÇÕES OCORRAM DE MANEIRA MAIS EFICIENTE */
         $stmt = $conn->prepare('INSERT INTO dados_clientes(nome, sobrenome, cpf, rg) VALUES (:nome, :sobrenome, :cpf, :rg);');
 
         /* VALORES A SEREM USADOS NA QUERY
-           OBS: PODEM SER VALORES DE UM FORMULÁRIO, 
+           OBS: PODEM SER VALORES DE UM FORMULÁRIO,
            SENDO ASSIM VALORES DINÂMICOS A CADA REQUISIÇÃO */
         $nome      = 'Usuario';
         $sobrenome = 'Teste';

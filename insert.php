@@ -1,13 +1,13 @@
-<?php 
+<?php
     /* ARQUIVO USADO PARA INSERIR DADOS EM UMA DETERMINADA TABELA
 
        OBS: NESTE EXEMPLO O BANCO DE DADOS USADO SE CHAMA 'clientes'
-       E A TABELA 'dados_clientes'.    
+       E A TABELA 'dados_clientes'.
     */
 
     try {
         /* VARIÁVEIS DE CONEXÃO */
-        $hostname = 'localhost'; /* HOST DE CONEXÃO */   
+        $hostname = 'localhost'; /* HOST DE CONEXÃO */
         $database = 'clientes';  /* BD CRIADO NO ARQUIVO 'create-database.php' */
         $username = 'root';      /* USUÁRIO P/ CONEXÃO */
         $password = '';          /* SENHA P/ CONEXÃO */

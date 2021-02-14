@@ -1,10 +1,10 @@
-<?php 
+<?php
     /* ARQUIVO USADO PARA INICIALIZAR A CONEXÃO COM O BANCO DE DADOS */
 
     try {
         /* VARIÁVEIS DE CONEXÃO */
         $hostname = 'localhost'; /* HOST DE CONEXÃO */
-        $database = 'database';  /* BANCO DE DADOS */    
+        $database = 'database';  /* BANCO DE DADOS */
         $username = 'root';      /* USUÁRIO P/ CONEXÃO */
         $password = '';          /* SENHA P/ CONEXÃO */
 

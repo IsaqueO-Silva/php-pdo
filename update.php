@@ -2,7 +2,7 @@
     /* ARQUIVO USADO PARA ATUALIZAR DADOS EM UMA DETERMINADA TABELA
 
        OBS: NESTE EXEMPLO O BANCO DE DADOS USADO SE CHAMA 'clientes'
-       E A TABELA 'dados_clientes'. 
+       E A TABELA 'dados_clientes'.
     */
 
     try {
@@ -46,7 +46,7 @@
 
         /* FECHANDO A CONEXÃO */
         $stmt = null;
-        $conn = null;      
+        $conn = null;
     }
     catch(PDOException $e) {
         echo 'Erro '.$e->getMessage();

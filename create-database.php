@@ -1,9 +1,9 @@
-<?php 
+<?php
     /* ARQUIVO USADO PARA CRIAR UM BANCO DE DADOS */
 
     try {
         /* VARIÁVEIS DE CONEXÃO */
-        $hostname = 'localhost'; /* HOST DE CONEXÃO */   
+        $hostname = 'localhost'; /* HOST DE CONEXÃO */  
         $username = 'root';      /* USUÁRIO P/ CONEXÃO */
         $password = '';          /* SENHA P/ CONEXÃO */
 
